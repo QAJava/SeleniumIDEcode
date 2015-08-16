@@ -22,6 +22,21 @@
 	<td>label=среда</td>
 </tr>
 <tr>
+	<td>storeText</td>
+	<td>//*[@id='account']</td>
+	<td>CountInit</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['countInit'].replace(' ','')</td>
+	<td>CountInit</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Initial Count is ${countInit}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//input[@type='checkbox'])[5]</td>
 	<td></td>
@@ -29,11 +44,6 @@
 <tr>
 	<td>click</td>
 	<td>xpath=(//input[@type='checkbox'])[7]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='menu']/div[2]/div[5]</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,29 +62,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>storeText</td>
-	<td>id=account</td>
-	<td>CountInit</td>
-</tr>
-<tr>
-	<td>storeEval</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>Initial Count is $</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>id=makeOrder</td>
 	<td></td>
 </tr>
 <tr>
 	<td>storeText</td>
-	<td>id=account</td>
+	<td>//*[@id='account']</td>
 	<td>Count Final</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Final Count is ${countFinal}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>StoreEval</td>
+	<td></td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
